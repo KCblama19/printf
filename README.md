@@ -9,4 +9,5 @@ ction in C.
 
 Task 1: Write a function that produces output according to a format.
 Task 2: Handle the following conversion specifiers
-Task 3:
+Task 3: 
+Task 4: I am active now.
