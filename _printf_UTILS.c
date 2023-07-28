@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * convert_size_number - Casts a number to the specified size
- * @num: Number to be casted.
- * @size: Number indicating the type to be casted.
+ * convert_size_number - move a number to the specified size
+ * @num: show the number to be casted
+ * @size: indicate the number to be casted
  *
- * Return: Casted value of num
+ * Return: value casted
  */
 long int convert_size_number(long int num, int size)
 {
@@ -18,11 +18,11 @@ long int convert_size_number(long int num, int size)
 }
 
 /**
- * convert_size_unsgnd - Casts a number to the specified size
- * @num: Number to be casted
- * @size: Number indicating the type to be casted
+ * convert_size_unsgnd - move a number to a specified size
+ * @num: show the number to be casted
+ * @size: the type to be casted
  *
- * Return: Casted value of num
+ * Return: value of num casted
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
 {
@@ -35,10 +35,10 @@ long int convert_size_unsgnd(unsigned long int num, int size)
 }
 
 /**
- * is_printable - Evaluates if a char is printable
- * @c: Char to be evaluated.
+ * is_printable - check if a char is printable
+ * @c: check for a char
  *
- * Return: 1 if c is printable, 0 otherwise
+ * Return: 1 if "c" is printable, otherwise 0
  */
 int is_printable(char c)
 {
@@ -49,16 +49,16 @@ int is_printable(char c)
 }
 
 /**
- * append_hexa_code - Append ascci in hexadecimal code to buffer
- * @buffer: Array of chars.
- * @i: Index at which to start appending.
- * @ascii_code: ASSCI CODE.
- * Return: Always 3
+ * append_hexa_code - append asci to hexadecimal code
+ * @buffer: take a array of char
+ * @i: show the indec to append start appending from
+ * @ascii_code: asci code.
+ * Return: Always (3)
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
-	/* The hexa format code is always 2 digits long */
+	
 	if (ascii_code < 0)
 		ascii_code *= -1;
 
@@ -72,10 +72,10 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 }
 
 /**
- * is_digit - Verifies if a char is a digit
- * @c: Char to be evaluated
+ * is_digit - verified the digit of a char
+ * @c: evaluate a char
  *
- * Return: 1 if c is a digit, 0 otherwise
+ * Return: 1 if "c" is a digit, otherwise 0
  */
 int is_digit(char c)
 {
